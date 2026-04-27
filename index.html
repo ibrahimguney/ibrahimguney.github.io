@@ -69,6 +69,8 @@
             projectsContainer.innerHTML = '';
             
             repos.forEach(repo => {
+                // Sitenin kendi reposunu listeden çıkar
+                if (repo.name === 'ibrahimguney.github.io') return;
                 const card = `
                     <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition transform hover:-translate-y-2">
                         <h3 class="text-xl font-bold mb-2 text-blue-400">${repo.name}</h3>
