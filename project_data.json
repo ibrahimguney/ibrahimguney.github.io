@@ -1,0 +1,214 @@
+[
+    {
+        "name": "public-apis/public-apis",
+        "stars": 427121,
+        "url": "https://github.com/public-apis/public-apis",
+        "description": "A collective list of free APIs",
+        "easy_issues_count": 1,
+        "last_update": "2026-04-27 22:50",
+        "issues": [
+            {
+                "title": "Public APIs Situation [ READ THIS ISSUE PLEASE ]",
+                "url": "https://github.com/public-apis/public-apis/issues/3104",
+                "createdAt": "2022-03-17T00:34:09Z",
+                "comments": {
+                    "totalCount": 95
+                }
+            }
+        ]
+    },
+    {
+        "name": "EbookFoundation/free-programming-books",
+        "stars": 386274,
+        "url": "https://github.com/EbookFoundation/free-programming-books",
+        "description": ":books: Freely available programming books",
+        "easy_issues_count": 1,
+        "last_update": "2026-04-27 22:50",
+        "issues": [
+            {
+                "title": "Outdated/partial translations `zh` since latest text review #3462",
+                "url": "https://github.com/EbookFoundation/free-programming-books/issues/6782",
+                "createdAt": "2022-03-17T08:44:07Z",
+                "comments": {
+                    "totalCount": 37
+                }
+            }
+        ]
+    },
+    {
+        "name": "Significant-Gravitas/AutoGPT",
+        "stars": 183824,
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "easy_issues_count": 12,
+        "last_update": "2026-04-27 22:50",
+        "issues": [
+            {
+                "title": "support to gemini",
+                "url": "https://github.com/Significant-Gravitas/AutoGPT/issues/6885",
+                "createdAt": "2024-02-21T09:10:55Z",
+                "comments": {
+                    "totalCount": 10
+                }
+            },
+            {
+                "title": "Add Support for Internationalization to AutoGPT",
+                "url": "https://github.com/Significant-Gravitas/AutoGPT/issues/7206",
+                "createdAt": "2024-06-10T16:37:55Z",
+                "comments": {
+                    "totalCount": 10
+                }
+            },
+            {
+                "title": "Move to a single source of truth for docs — Remove duplicate info from readme",
+                "url": "https://github.com/Significant-Gravitas/AutoGPT/issues/8887",
+                "createdAt": "2024-12-05T18:45:49Z",
+                "comments": {
+                    "totalCount": 1
+                }
+            },
+            {
+                "title": "Show disabled blocks as disabled (greyed out and un-selectable) in the block list with a reason on hover (or similar) and add a separate block bool to hide blocks from the list",
+                "url": "https://github.com/Significant-Gravitas/AutoGPT/issues/8889",
+                "createdAt": "2024-12-05T19:45:03Z",
+                "comments": {
+                    "totalCount": 2
+                }
+            },
+            {
+                "title": "ollama llm requires credentials",
+                "url": "https://github.com/Significant-Gravitas/AutoGPT/issues/8952",
+                "createdAt": "2024-12-12T23:48:09Z",
+                "comments": {
+                    "totalCount": 6
+                }
+            }
+        ]
+    },
+    {
+        "name": "ytdl-org/youtube-dl",
+        "stars": 140147,
+        "url": "https://github.com/ytdl-org/youtube-dl",
+        "description": "Command-line program to download videos from YouTube.com and other video sites",
+        "easy_issues_count": 15,
+        "last_update": "2026-04-27 22:50",
+        "issues": [
+            {
+                "title": "Site support request: memritv.org",
+                "url": "https://github.com/ytdl-org/youtube-dl/issues/7403",
+                "createdAt": "2015-11-08T01:08:31Z",
+                "comments": {
+                    "totalCount": 8
+                }
+            },
+            {
+                "title": "Support for online channel M3 on MTVA Archívum (HU)",
+                "url": "https://github.com/ytdl-org/youtube-dl/issues/21430",
+                "createdAt": "2019-06-17T16:31:19Z",
+                "comments": {
+                    "totalCount": 2
+                }
+            },
+            {
+                "title": "sportdeutschland.tv error 404",
+                "url": "https://github.com/ytdl-org/youtube-dl/issues/30348",
+                "createdAt": "2021-12-09T19:53:40Z",
+                "comments": {
+                    "totalCount": 3
+                }
+            },
+            {
+                "title": "[AlphaPorno] ERROR: Unable to extract video url",
+                "url": "https://github.com/ytdl-org/youtube-dl/issues/30458",
+                "createdAt": "2022-01-03T18:06:40Z",
+                "comments": {
+                    "totalCount": 1
+                }
+            },
+            {
+                "title": "newgrounds video error",
+                "url": "https://github.com/ytdl-org/youtube-dl/issues/30575",
+                "createdAt": "2022-01-30T14:03:41Z",
+                "comments": {
+                    "totalCount": 1
+                }
+            }
+        ]
+    },
+    {
+        "name": "open-webui/open-webui",
+        "stars": 134465,
+        "url": "https://github.com/open-webui/open-webui",
+        "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+        "easy_issues_count": 4,
+        "last_update": "2026-04-27 22:50",
+        "issues": [
+            {
+                "title": "enhancement: more keyboard shortcuts",
+                "url": "https://github.com/open-webui/open-webui/issues/1008",
+                "createdAt": "2024-03-03T12:52:29Z",
+                "comments": {
+                    "totalCount": 27
+                }
+            },
+            {
+                "title": "feat: additional webhook events",
+                "url": "https://github.com/open-webui/open-webui/issues/1240",
+                "createdAt": "2024-03-21T02:35:54Z",
+                "comments": {
+                    "totalCount": 2
+                }
+            },
+            {
+                "title": "enh: Functions/Tools & Valves additional gimmicks",
+                "url": "https://github.com/open-webui/open-webui/issues/5486",
+                "createdAt": "2024-09-17T21:46:55Z",
+                "comments": {
+                    "totalCount": 3
+                }
+            },
+            {
+                "title": "Inconsistent Conversation Bubble Sizes with YAML Code Blocks in Widescreen Mode",
+                "url": "https://github.com/open-webui/open-webui/issues/5975",
+                "createdAt": "2024-10-07T13:47:19Z",
+                "comments": {
+                    "totalCount": 7
+                }
+            }
+        ]
+    },
+    {
+        "name": "microsoft/markitdown",
+        "stars": 117879,
+        "url": "https://github.com/microsoft/markitdown",
+        "description": "Python tool for converting files and office documents to Markdown.",
+        "easy_issues_count": 3,
+        "last_update": "2026-04-27 22:50",
+        "issues": [
+            {
+                "title": "LLM Integration",
+                "url": "https://github.com/microsoft/markitdown/issues/12",
+                "createdAt": "2024-12-13T19:38:10Z",
+                "comments": {
+                    "totalCount": 16
+                }
+            },
+            {
+                "title": "File support: chm support",
+                "url": "https://github.com/microsoft/markitdown/issues/14",
+                "createdAt": "2024-12-13T21:39:04Z",
+                "comments": {
+                    "totalCount": 6
+                }
+            },
+            {
+                "title": "Support for .doc extensions",
+                "url": "https://github.com/microsoft/markitdown/issues/23",
+                "createdAt": "2024-12-14T14:42:25Z",
+                "comments": {
+                    "totalCount": 9
+                }
+            }
+        ]
+    }
+]
