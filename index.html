@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <title>İbrahim Güney | Portfolyo</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İbrahim Güney | Portfolyo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body style="font-family: Arial; text-align: center; padding-top: 50px;">
-    <h1>Merhaba, Ben İbrahim! 👋</h1>
-    <p>Python Geliştiricisi ve Açık Kaynak Meraklısı.</p>
-    <p>Bu site şu an yapım aşamasında...</p>
+<body class="bg-gray-900 text-white font-sans antialiased">
+
+    <section class="min-h-screen flex flex-col justify-center items-center px-4">
+        <div class="max-w-3xl text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
+                Merhaba, Ben İbrahim! 👋
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-8">
+                Python Geliştiricisi | Veri Analizi ve Açık Kaynak Meraklısı
+            </p>
+            
+            <div class="flex justify-center space-x-6 mb-12">
+                <a href="https://github.com/ibrahimguney" class="text-3xl hover:text-blue-400 transition"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-3xl hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-3xl hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+                Projelerimi Gör
+            </a>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-gray-800 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">Öne Çıkan Projeler</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <h3 class="text-xl font-bold mb-2">Python Veri Crawler</h3>
+                    <p class="text-gray-400">GitHub API kullanarak açık kaynak projeleri analiz eden bir sistem.</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition">
+                    <h3 class="text-xl font-bold mb-2">Gelecek Proje</h3>
+                    <p class="text-gray-400">Yakında buraya yeni çalışmalar eklenecek.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-500 text-sm">
+        © 2026 İbrahim Güney. GitHub Pages ile oluşturuldu.
+    </footer>
+
 </body>
 </html>
