@@ -7,75 +7,136 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-gray-900 text-white font-sans antialiased">
-    <section class="min-h-screen flex flex-col justify-center items-center px-4 pt-20">
+<body class="bg-gray-950 text-white font-sans antialiased">
+    <main>
+        <section class="min-h-screen flex flex-col justify-center items-center px-4 py-20">
+            <div class="max-w-4xl text-center">
+                <p class="text-sm font-bold tracking-widest text-emerald-300 uppercase mb-4">İbrahim Güney</p>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
+                    Python Geliştiricisi ve Web Uygulamaları
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-400 mb-10">
+                    Veri analizi, açık kaynak ve kullanıcı odaklı web arayüzleri üzerine projeler geliştiriyorum.
+                </p>
 
-    <section class="min-h-screen flex flex-col justify-center items-center px-4">
-        <div class="max-w-3xl text-center">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
-                Merhaba, Ben İbrahim! 👋
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-400 mb-8">
-                Python Geliştiricisi | Veri Analizi ve Açık Kaynak Meraklısı
-            </p>
-            
-            <div class="flex justify-center space-x-6 mb-12">
-                <a href="https://github.com/ibrahimguney" class="text-3xl hover:text-blue-400 transition"><i class="fab fa-github"></i></a>
-                <div class="flex justify-center space-x-6 mb-12">
-             <a href="https://github.com/ibrahimguney" target="_blank" class="text-3xl hover:text-blue-400 transition"> <i class="fab fa-github"></i></a>
-    <a href="https://linkedin.com/in/ibrahim-güney-3a206514" target="_blank" class="text-3xl hover:text-blue-400 transition"> <i class="fab fa-linkedin"></i> </a>
-    <a href="mailto:ibrahimguney16@gmail.com" class="text-3xl hover:text-blue-400 transition"> <i class="fas fa-envelope"></i></a>
-</div>
-                <a href="#" class="text-3xl hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="text-3xl hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
-            </div>
-
-            <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
-                Projelerimi Gör
-            </a>
-        </div>
-    </section>
-
-    <section id="projects" class="py-20 bg-gray-800 px-4">
-        <div class="max-w-5xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-12">Öne Çıkan Projeler</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition">
-                    <h3 class="text-xl font-bold mb-2">Python Veri Crawler</h3>
-                    <p class="text-gray-400">GitHub API kullanarak açık kaynak projeleri analiz eden bir sistem.</p>
+                <div class="flex justify-center gap-6 mb-12">
+                    <a href="https://github.com/ibrahimguney" target="_blank" class="text-3xl text-gray-300 hover:text-blue-400 transition" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/ibrahim-güney-3a206514" target="_blank" class="text-3xl text-gray-300 hover:text-blue-400 transition" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:ibrahimguney16@gmail.com" class="text-3xl text-gray-300 hover:text-blue-400 transition" aria-label="E-posta">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition">
-                    <h3 class="text-xl font-bold mb-2">Gelecek Proje</h3>
-                    <p class="text-gray-400">Yakında buraya yeni çalışmalar eklenecek.</p>
+
+                <a href="#featured" class="inline-flex items-center justify-center rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 transition duration-300 ease-in-out transform hover:scale-105">
+                    Projelerimi Gör
+                </a>
+            </div>
+        </section>
+
+        <section id="featured" class="py-20 px-4 bg-gray-900">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <p class="text-sm font-bold tracking-widest text-emerald-300 uppercase mb-3">Öne Çıkan Proje</p>
+                    <h2 class="text-3xl md:text-4xl font-bold">Bulut Dosya Yöneticisi</h2>
+                </div>
+
+                <article class="grid md:grid-cols-[1.1fr_0.9fr] gap-8 rounded-2xl border border-gray-700 bg-gray-950 p-6 md:p-8 shadow-2xl shadow-black/30">
+                    <div class="text-left">
+                        <span class="inline-flex rounded-full bg-emerald-950 px-3 py-1 text-xs font-bold text-emerald-300 border border-emerald-800 mb-5">GitHub Pages yayında</span>
+                        <h3 class="text-2xl md:text-3xl font-extrabold mb-4">Supabase destekli profesyonel dosya yönetimi arayüzü</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Hesap açmadan incelenebilen demo modu, dosya yükleme/indirme, klasör yönetimi, arama, sıralama, paylaşım linki ve depolama paneli içeren statik web uygulaması.
+                        </p>
+                        <div class="flex flex-wrap gap-3 mb-8">
+                            <span class="rounded-full bg-gray-800 px-3 py-1 text-sm text-gray-300">HTML</span>
+                            <span class="rounded-full bg-gray-800 px-3 py-1 text-sm text-gray-300">CSS</span>
+                            <span class="rounded-full bg-gray-800 px-3 py-1 text-sm text-gray-300">JavaScript</span>
+                            <span class="rounded-full bg-gray-800 px-3 py-1 text-sm text-gray-300">Supabase</span>
+                        </div>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://ibrahimguney.github.io/bulut-dosya-yoneticisi/" target="_blank" class="rounded-full bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold py-3 px-6 transition">Canlı Demo</a>
+                            <a href="https://github.com/ibrahimguney/bulut-dosya-yoneticisi" target="_blank" class="rounded-full border border-gray-600 hover:border-blue-400 text-white font-bold py-3 px-6 transition">GitHub Repo</a>
+                        </div>
+                    </div>
+
+                    <div class="rounded-xl border border-gray-800 bg-gray-900 p-5">
+                        <div class="flex items-center justify-between border-b border-gray-800 pb-4 mb-4">
+                            <div>
+                                <p class="text-xs text-gray-500 font-bold uppercase">Çalışma alanı</p>
+                                <p class="font-bold">Bulut Alanı</p>
+                            </div>
+                            <span class="rounded-full bg-blue-950 px-3 py-1 text-xs text-blue-300">Demo hazır</span>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3 rounded-lg bg-gray-950 p-3 border border-gray-800">
+                                <span class="grid h-10 w-10 place-items-center rounded-lg bg-blue-950 text-blue-300 text-xs font-black">PDF</span>
+                                <div>
+                                    <p class="font-bold">Musteri-sunum-notlari.pdf</p>
+                                    <p class="text-xs text-gray-500">Paylaşım linki aktif</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 rounded-lg bg-gray-950 p-3 border border-gray-800">
+                                <span class="grid h-10 w-10 place-items-center rounded-lg bg-emerald-950 text-emerald-300 text-xs font-black">IMG</span>
+                                <div>
+                                    <p class="font-bold">Urun-gorseli.png</p>
+                                    <p class="text-xs text-gray-500">Görseller klasörü</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 rounded-lg bg-gray-950 p-3 border border-gray-800">
+                                <span class="grid h-10 w-10 place-items-center rounded-lg bg-amber-950 text-amber-300 text-xs font-black">XLS</span>
+                                <div>
+                                    <p class="font-bold">Teklif-tablosu.xlsx</p>
+                                    <p class="text-xs text-gray-500">Projeler klasörü</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 bg-gray-800 px-4">
+            <div class="max-w-6xl mx-auto text-center">
+                <p class="text-sm font-bold tracking-widest text-blue-300 uppercase mb-3">Açık Kaynak Analizi</p>
+                <h2 class="text-3xl font-bold mb-12">Analiz Edilen Projeler</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
+                        <h3 class="text-xl font-bold mb-2">Projeler yükleniyor</h3>
+                        <p class="text-gray-400">JSON verisi okunuyor.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="py-10 text-center text-gray-500 text-sm">
         © 2026 İbrahim Güney. GitHub Pages ile oluşturuldu.
     </footer>
+
 <script>
     async function fetchMyAnalyzedData() {
         const projectsContainer = document.querySelector('#projects .grid');
-        
+
         try {
-            // Kendi yüklediğin JSON dosyasından veriyi çek
             const response = await fetch('./project_data.json');
             const projects = await response.json();
-            
+
             projectsContainer.innerHTML = '';
-            
+
             projects.forEach(project => {
                 const card = `
-                    <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-emerald-500 transition transform hover:-translate-y-2">
-                        <div class="flex justify-between items-start mb-4">
+                    <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-emerald-500 transition transform hover:-translate-y-2 text-left">
+                        <div class="flex justify-between items-start gap-4 mb-4">
                             <h3 class="text-xl font-bold text-emerald-400">${project.name}</h3>
                             <span class="bg-emerald-900 text-emerald-300 text-xs px-2 py-1 rounded">⭐ ${project.stars.toLocaleString()}</span>
                         </div>
                         <p class="text-gray-400 mb-4 text-sm h-12 overflow-hidden">${project.description || 'Açıklama yok.'}</p>
                         <div class="border-t border-gray-800 pt-4">
-                            <p class="text-xs text-gray-500 mb-2 font-semibold">🔍 KOLAY GÖREVLER (${project.easy_issues_count})</p>
+                            <p class="text-xs text-gray-500 mb-2 font-semibold">KOLAY GÖREVLER (${project.easy_issues_count})</p>
                             <ul class="text-xs text-blue-400 space-y-1">
                                 ${project.issues.slice(0, 2).map(issue => `
                                     <li><a href="${issue.url}" target="_blank" class="hover:underline">→ ${issue.title.substring(0, 50)}...</a></li>
