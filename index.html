@@ -47,7 +47,7 @@
                     <h2 class="text-3xl md:text-4xl font-bold">Canlı Web Uygulamaları</h2>
                 </div>
 
-                <div class="grid gap-10">
+                <div class="featured-grid grid gap-10">
                     <article class="grid md:grid-cols-[1.1fr_0.9fr] gap-8 rounded-2xl border border-gray-700 bg-gray-950 p-6 md:p-8 shadow-2xl shadow-black/30">
                         <div class="text-left">
                             <span class="inline-flex rounded-full bg-emerald-950 px-3 py-1 text-xs font-bold text-emerald-300 border border-emerald-800 mb-5">GitHub Pages yayında</span>
@@ -323,5 +323,10 @@
 
     fetchMyAnalyzedData();
 </script>
+<style>
+    .featured-grid > article:nth-child(n + 4) {
+        display: none;
+    }
+</style>
 </body>
 </html>
