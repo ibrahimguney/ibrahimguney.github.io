@@ -377,8 +377,29 @@
     fetchMyAnalyzedData();
 </script>
 <style>
+    .featured-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featured-grid > article:nth-child(1) {
+        order: 4;
+    }
+
+    .featured-grid > article:nth-child(2) {
+        order: 3;
+    }
+
     .featured-grid > article:nth-child(3) {
-        order: -1;
+        order: 1;
+    }
+
+    .featured-grid > article:nth-child(4) {
+        order: 2;
+    }
+
+    .featured-grid > article:nth-child(5) {
+        order: 5;
     }
 
     .featured-grid > article:nth-child(n + 6) {
