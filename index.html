@@ -259,6 +259,59 @@
                             </div>
                         </div>
                     </article>
+
+                    <article class="grid md:grid-cols-[1.1fr_0.9fr] gap-8 rounded-2xl border border-gray-700 bg-gray-950 p-6 md:p-8 shadow-2xl shadow-black/30">
+                        <div class="text-left">
+                            <span class="inline-flex rounded-full bg-amber-950 px-3 py-1 text-xs font-bold text-amber-300 border border-amber-800 mb-5">AI eğitim paneli</span>
+                            <h3 class="text-2xl md:text-3xl font-extrabold mb-4">AkilLab AI Eğitim Paneli</h3>
+                            <p class="text-gray-400 mb-6 leading-relaxed">
+                                Ders planı, quiz, özet, kart seti, ödev ve rubrik üretimi için hazırlanmış; öğretmenlerin hızlı materyal taslağı oluşturmasına yardımcı olan web paneli.
+                            </p>
+                            <div class="flex flex-wrap gap-3 mb-8">
+                                <span class="rounded-full bg-gray-800 px-3 py-1 text-sm text-gray-300">Node.js</span>
+                                <span class="rounded-full bg-gray-800 px-3 py-1 text-sm text-gray-300">OpenAI</span>
+                                <span class="rounded-full bg-gray-800 px-3 py-1 text-sm text-gray-300">Supabase</span>
+                                <span class="rounded-full bg-gray-800 px-3 py-1 text-sm text-gray-300">Render</span>
+                            </div>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="https://akillab-ai-egitim-paneli.onrender.com" target="_blank" class="rounded-full bg-amber-500 hover:bg-amber-400 text-gray-950 font-bold py-3 px-6 transition">Canlı Demo</a>
+                                <a href="https://github.com/ibrahimguney/web-proje" target="_blank" class="rounded-full border border-gray-600 hover:border-blue-400 text-white font-bold py-3 px-6 transition">GitHub Repo</a>
+                            </div>
+                        </div>
+
+                        <div class="rounded-xl border border-gray-800 bg-gray-900 p-5">
+                            <div class="flex items-center justify-between border-b border-gray-800 pb-4 mb-4">
+                                <div>
+                                    <p class="text-xs text-gray-500 font-bold uppercase">Üretim stüdyosu</p>
+                                    <p class="font-bold">Eğitim Materyali</p>
+                                </div>
+                                <span class="rounded-full bg-amber-950 px-3 py-1 text-xs text-amber-300">Render</span>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3 rounded-lg bg-gray-950 p-3 border border-gray-800">
+                                    <span class="grid h-10 w-10 place-items-center rounded-lg bg-amber-950 text-amber-300 text-xs font-black">AI</span>
+                                    <div>
+                                        <p class="font-bold">Ders planı üretimi</p>
+                                        <p class="text-xs text-gray-500">Konu, seviye ve süreye göre taslak</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3 rounded-lg bg-gray-950 p-3 border border-gray-800">
+                                    <span class="grid h-10 w-10 place-items-center rounded-lg bg-blue-950 text-blue-300 text-xs font-black">QZ</span>
+                                    <div>
+                                        <p class="font-bold">Quiz ve ödev</p>
+                                        <p class="text-xs text-gray-500">Ölçme, rubrik ve çalışma materyali</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3 rounded-lg bg-gray-950 p-3 border border-gray-800">
+                                    <span class="grid h-10 w-10 place-items-center rounded-lg bg-emerald-950 text-emerald-300 text-xs font-black">DB</span>
+                                    <div>
+                                        <p class="font-bold">Kütüphane</p>
+                                        <p class="text-xs text-gray-500">Kaydetme, arama ve tekrar kullanım</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -324,6 +377,10 @@
     fetchMyAnalyzedData();
 </script>
 <style>
+    .featured-grid > article:nth-child(3) {
+        order: -1;
+    }
+
     .featured-grid > article:nth-child(n + 6) {
         display: none;
     }
