@@ -3,29 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="0; url=./02-web-ngram/" />
     <title>AI Evolution Lab</title>
-    <style>
-      body {
-        display: grid;
-        min-height: 100vh;
-        place-items: center;
-        margin: 0;
-        background: #f6f8fb;
-        color: #142033;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      }
-
-      a {
-        color: #1769ff;
-        font-weight: 800;
-      }
-    </style>
+    <meta
+      name="description"
+      content="TR/ENG proje tabanli yapay zeka dersi: machine learning, deep learning, LLM, RAG, agents ve guncel AI okuryazarligi."
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="app-header">
+      <a class="brand" href="./" aria-label="AI Evolution Lab">
+        <span class="brand-mark" aria-hidden="true">AI</span>
+        <span>
+          <strong>AI Evolution Lab</strong>
+          <small data-i18n="brandSub">Yaparak yapay zeka öğrenimi</small>
+        </span>
+      </a>
+
+      <nav aria-label="Course sections">
+        <a href="#roadmap" data-i18n="navRoadmap">Yol Haritası</a>
+        <a href="#studio" data-i18n="navStudio">Ders Studio</a>
+        <a href="#research" data-i18n="navResearch">Güncel Takip</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="chip-button" id="levelToggle" type="button">Lisans</button>
+        <button class="chip-button" id="langToggle" type="button">EN</button>
+      </div>
+    </header>
+
     <main>
-      <h1>AI Evolution Lab</h1>
-      <p>Web demo açılıyor. Açılmazsa <a href="./02-web-ngram/">buraya tıkla</a>.</p>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">TR/ENG çift dilli ders platformu</p>
+          <h1 id="hero-title" data-i18n="heroTitle">Yapay zekayı okuyarak değil, model kurarak öğren.</h1>
+          <p data-i18n="heroText">
+            Lisans ve lisansüstü düzey için tasarlanan bu platform, her hafta çalışan bir mini proje,
+            deney defteri, paper okuma görevi ve portfolyo çıktısı üretir.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#roadmap" data-i18n="startButton">12 haftalık derse başla</a>
+            <button class="secondary-button" id="copyPromptButton" type="button" data-i18n="copyPrompt">
+              Başlangıç promptunu kopyala
+            </button>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Course summary">
+          <div class="panel-title">
+            <span data-i18n="courseIdentity">Ders hüviyeti</span>
+            <strong id="courseLevel">Lisans</strong>
+          </div>
+          <div class="stat-grid">
+            <span><strong>12</strong><small data-i18n="weeksLabel">hafta</small></span>
+            <span><strong>12</strong><small data-i18n="projectsLabel">mini proje</small></span>
+            <span><strong>6</strong><small data-i18n="portfolioLabel">portfolyo çıktısı</small></span>
+            <span><strong>TR/ENG</strong><small data-i18n="languageLabel">dil desteği</small></span>
+          </div>
+          <div class="progress-card">
+            <div>
+              <span data-i18n="progressLabel">Tamamlanan görev</span>
+              <strong id="progressText">0/12</strong>
+            </div>
+            <div class="progress-track"><span id="progressBar"></span></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="roadmap" id="roadmap" aria-labelledby="roadmap-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="roadmapEyebrow">Müfredat</p>
+          <h2 id="roadmap-title" data-i18n="roadmapTitle">12 haftalık yaparak öğrenme yolu</h2>
+        </div>
+        <div class="roadmap-layout">
+          <div class="week-list" id="weekList"></div>
+          <article class="week-detail panel" id="weekDetail"></article>
+        </div>
+      </section>
+
+      <section class="studio" id="studio" aria-labelledby="studio-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="studioEyebrow">Ders studio</p>
+          <h2 id="studio-title" data-i18n="studioTitle">Her hafta teori, kod, deney ve yansıtma üretir.</h2>
+        </div>
+        <div class="studio-grid">
+          <section class="panel">
+            <h3 data-i18n="promptTitle">Ders tasarım promptu</h3>
+            <p data-i18n="promptText">
+              Bu prompt ile bir haftayı daha derin modüle çevirebilir, proje görevlerini genişletebiliriz.
+            </p>
+            <textarea id="promptOutput" spellcheck="false"></textarea>
+            <button class="primary-button full-button" id="copyStudioPrompt" type="button" data-i18n="copyPromptShort">
+              Promptu kopyala
+            </button>
+          </section>
+
+          <section class="panel notebook-panel">
+            <h3 data-i18n="notebookTitle">Öğrenci deney defteri</h3>
+            <label>
+              <span data-i18n="hypothesisLabel">Hipotez / Hypothesis</span>
+              <textarea id="hypothesisInput" data-placeholder-tr="Bu hafta modelin nasıl davranmasını bekliyorsun?" data-placeholder-en="What do you expect the model to do this week?"></textarea>
+            </label>
+            <label>
+              <span data-i18n="observationLabel">Gözlem / Observation</span>
+              <textarea id="observationInput" data-placeholder-tr="Deney sonucu, hata ve iyileştirme notlarını yaz." data-placeholder-en="Write experiment results, errors, and improvement notes."></textarea>
+            </label>
+            <div class="notes-actions">
+              <button class="secondary-button" id="saveNotebookButton" type="button" data-i18n="saveNotebook">Defteri kaydet</button>
+              <span id="saveState" data-i18n="localSave">Yerel tarayıcıda saklanır</span>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="research" id="research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="researchEyebrow">Güncel gelişmeler</p>
+          <h2 id="research-title" data-i18n="researchTitle">Ders bitince araştırma takibi yapabilecek düzeye gel.</h2>
+        </div>
+        <div class="research-grid" id="researchGrid"></div>
+      </section>
     </main>
+
+    <footer class="app-footer">
+      <span>AI Evolution Lab v2</span>
+      <a href="../" data-i18n="backPortal">Ana portala dön</a>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
   </body>
 </html>
